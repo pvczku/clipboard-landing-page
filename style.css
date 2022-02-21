@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 body {
+    width: 95vw;
+    margin: auto;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
 }
@@ -11,7 +13,13 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
-
+    .header {
+        text-align: center;
+    }
+    .header img {
+        margin: auto;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
