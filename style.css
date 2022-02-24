@@ -8,9 +8,41 @@ body {
     text-align: center;
     font-size: 120%;
 }
+h2 {
+    color: hsl(210, 10%, 33%);
+}
+.desc {
+    color: hsl(201, 11%, 66%);
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+.bgreen {
+    background-color: #26bba4;
+    -webkit-box-shadow: inset 0px -3px 0px 0px rgba(32, 158, 137, 1);
+    -moz-box-shadow: inset 0px -3px 0px 0px rgba(32, 158, 137, 1);
+    box-shadow: inset 0px -3px 0px 0px rgba(32, 158, 137, 1);
+}
+.bblue {
+    background-color: #6174ff;
+    -webkit-box-shadow: inset 0px -3px 0px 0px rgba(81, 98, 209, 1);
+    -moz-box-shadow: inset 0px -3px 0px 0px rgba(81, 98, 209, 1);
+    box-shadow: inset 0px -3px 0px 0px rgba(81, 98, 209, 1);
+}
+.bblue, .bgreen {
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+    border: 0px;
+    font-weight: 500;
+    font-size: 100%;
+}
 /* font-family: 'Bai Jamjuree', sans-serif; */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body {
         background-image: url(./images/bg-header-mobile.png);
         background-repeat: no-repeat;
@@ -18,7 +50,6 @@ body {
         min-width: 320px;
     }
     h2 {
-        color: hsl(210, 10%, 33%);
         margin-top: 50px;
     }
     .header img {
@@ -30,40 +61,15 @@ body {
         display: block;
         margin-top: 50px;
     }
-    .desc {
-        font-size: 90%;
-        color: hsl(201, 11%, 66%);
-    }
     .buttons {
         margin-top: 30px;
         display: flex;
         flex-direction: column;
         row-gap: 20px;
     }
-    button:hover {
-        cursor: pointer;
-    }
-    .bblue, .bgreen {
-        font-family: 'Bai Jamjuree', sans-serif;
-        color: white;
-        padding: 15px;
-        border-radius: 30px;
-        border: 0px;
-        font-weight: 500;
-        font-size: 100%;
-    }
-    .bgreen {
-        background-color: #26bba4;
-        -webkit-box-shadow: inset 0px -3px 0px 0px rgba(32, 158, 137, 1);
-        -moz-box-shadow: inset 0px -3px 0px 0px rgba(32, 158, 137, 1);
-        box-shadow: inset 0px -3px 0px 0px rgba(32, 158, 137, 1);
-    }
-    .bblue {
-        background-color: #6174ff;
-        -webkit-box-shadow: inset 0px -3px 0px 0px rgba(81, 98, 209, 1);
-        -moz-box-shadow: inset 0px -3px 0px 0px rgba(81, 98, 209, 1);
-        box-shadow: inset 0px -3px 0px 0px rgba(81, 98, 209, 1);
-    }
+    
+    
+    
     .con {
         margin-top: 70px;
     }
@@ -132,10 +138,104 @@ body {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     body {
         background-image: url(./images/bg-header-desktop.png);
         background-repeat: no-repeat;
         background-size: contain;
+    }
+    h2 {
+        margin-top: 70px;
+        font-size: 2.5vw;
+}
+   .header img {
+        margin-top: -50px;
+    }
+    .desc {
+        max-width: 42vw;
+        margin: auto;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        font-size: 1.5vw;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        column-gap: 20px;
+        width: fit-content;
+        margin: auto;
+    }
+    .bblue, .bgreen {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+    }
+    .img {
+        width: 100%;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+    }
+    .al-left {
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .al-left h2 {
+        font-size: 2vw;
+        margin-top: -10px;
+    }
+    .al-left p {
+        font-size: 1vw;
+        margin-top: -10px;
+        margin-left: 0px;
+    }
+    .devices {
+        width: 80vw;
+    }
+    .item-main {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+    }
+    .closer-down {
+        margin-bottom: -10px;
+    }
+    .icon {
+        margin-bottom: -20px;
+        margin-top: 10px;
+    }
+    .item h2 {
+        margin-bottom: -10px;
+    }
+    .item p {
+        margin-bottom: 30px;
+    }
+    .sponsors {
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5vw;
+    }
+    .sponsors img {
+        width: 15%;
+        height: 100%;
+    }
+    .footer {
+        margin-top: 150px;
+        background-color: #f5f6f8;
     }
 }
