@@ -58,6 +58,10 @@ button:hover {
     display: flex;
     justify-content: center;
 }
+.social img:hover {
+    fill:  hsl(171, 66%, 44%);
+    cursor: pointer;
+}
 /* font-family: 'Bai Jamjuree', sans-serif; */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 700px) {
@@ -65,7 +69,6 @@ button:hover {
         background-image: url(./images/bg-header-mobile.png);
         background-repeat: no-repeat;
         background-size: contain;
-        min-width: 320px;
     }
     h2 {
         margin-top: 50px;
@@ -142,10 +145,7 @@ button:hover {
     .social img {
         margin: 5vw;
     }
-    .social img:hover {
-        fill:  hsl(171, 66%, 44%);
-        cursor: pointer;
-    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
