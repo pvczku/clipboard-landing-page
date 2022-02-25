@@ -58,8 +58,8 @@ button:hover {
     display: flex;
     justify-content: center;
 }
-.social img:hover {
-    fill:  hsl(171, 66%, 44%);
+.svg:hover {
+    filter: invert(62%) sepia(42%) saturate(750%) hue-rotate(121deg) brightness(93%) contrast(80%);
     cursor: pointer;
 }
 /* font-family: 'Bai Jamjuree', sans-serif; */
@@ -258,8 +258,13 @@ button:hover {
     }
     .footer-opts {
         display: flex;
-        justify-content: space-around;
         column-gap: 7vw;
+        width: 44vw;
+        flex-wrap: wrap;
+    }
+    .hover {
+        width: 10vw;
+        text-align: left;
     }
     .left {
         text-align: left;
